@@ -1,6 +1,7 @@
 <template>
-          <v-app>
-          <v-container class="fill-height blue lighten-5" fluid transition="slide-x-transition">   
+            <v-main>
+
+           <v-container class="fill-height blue lighten-5" fluid >  
               <v-row class="justify-center">
                   <v-col cols="8">
                     <v-card
@@ -13,7 +14,7 @@
                   value="true"
                   >
                   <template v-slot:activator>
-                    <v-list-item-title>Users</v-list-item-title>
+                    <v-list-item-title>Actions</v-list-item-title>
                   </template>
                   <v-list-item
                   v-for="(crud, i) in cruds"
@@ -32,8 +33,9 @@
                 
               </v-row>        
               
-          </v-container>
-        </v-app> 
+           </v-container> 
+          
+            </v-main>
 </template>
 
 
@@ -44,8 +46,8 @@
       data: () => ({
         drawer: false,
         cruds: [
-            ['Create', 'mdi-car'],
-            ['Read', 'mdi-car'],
+            ['Create', 'mdi-heart'],
+            ['Read', 'mdi-text'],
             ['Update', 'mdi-update'],
             ['Delete', 'mdi-delete'],
           ],

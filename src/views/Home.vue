@@ -1,6 +1,7 @@
 <template> 
-      <v-app>
-       <v-container class="fill-height blue lighten-5" fluid transition="slide-x-transition">           
+    <v-app>
+          <v-content app>
+       <v-container margin= "0" padding ="0" class="fill-height blue lighten-5" fluid transition="slide-x-transition" app>           
               <v-row wrap>
                 <v-col cols="12" md="8" sm="12" lg="8">
                   <iframe width=100% height=100%
@@ -8,7 +9,7 @@
                   </iframe>
                 </v-col>
                 <v-col cols="12" sm="12" lg="4" md="4" >
-                  <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.7" contain></v-img>
+                  <v-img src="https://picsum.photos/510/300?random" aspect-ratio="1.7" contain></v-img><br>
                   <v-row>
                     <v-col>
                       <v-card
@@ -23,7 +24,7 @@
                   outlined
                   :elevation ="selected"
                   >
-                    <v-card-text  cols="6" md="4" sm="12" lg="4"><v-row><v-btn center large class="primary">Primary</v-btn></v-row><br>
+                    <v-card-text  cols="6" md="4" sm="12" lg="4" class="fill-height blue lighten-4"><v-row><v-btn center large class="primary">Primary</v-btn></v-row><br>
                     <v-row><v-switch class="mx-2" label="Toggle Button"></v-switch></v-row>
                     <v-row>
                     <v-col cols="6" sm="12" md="4" lg="6">
@@ -44,11 +45,8 @@
                     
            
           </v-container>
-       
-        
-      
-       
-      </v-app>
+          </v-content>
+          </v-app>
 </template>
 
   <script>
