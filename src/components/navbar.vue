@@ -1,5 +1,5 @@
 <template>
-      <v-app>
+      <div id="navbar">
         <v-app-bar
           app
           color="indigo"
@@ -18,7 +18,7 @@
           v-model="group"
           active-class="indigo--text text--accent-4"
         >
-            <v-list-item v-for="link in links" :key="link.text" router :to="link.path">
+            <v-list-item @click.stop="drawer =!drawer" v-for="link in links" :key="link.text" router :to="link.path">
              
                 <v-icon>{{link.icon}}</v-icon>
              
@@ -37,11 +37,12 @@
           <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
         </v-footer>
       
-      </v-app>
+      </div>
 </template>
 
 <script>
 export default {
+  name: 'navbar',
      data: () => ({
      drawer: false,
      links: [

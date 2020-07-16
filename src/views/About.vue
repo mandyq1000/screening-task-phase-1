@@ -1,7 +1,7 @@
 <template>
-            <v-main>
-
-           <v-container class="fill-height blue lighten-5" fluid >  
+           
+             <v-content>
+               <v-container class="fill-height blue lighten-5" fluid >  
               <v-row class="justify-center">
                   <v-col cols="8">
                     <v-card
@@ -34,8 +34,9 @@
               </v-row>        
               
            </v-container> 
+             </v-content>
           
-            </v-main>
+            
 </template>
 
 
@@ -43,6 +44,7 @@
  
 
     export default {
+      name: 'about',
       data: () => ({
         drawer: false,
         cruds: [

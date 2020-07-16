@@ -1,7 +1,6 @@
 <template> 
-    <v-app>
-          <v-content app>
-       <v-container margin= "0" padding ="0" class="fill-height blue lighten-5" fluid transition="slide-x-transition" app>           
+     <v-content>
+       <v-container class="fill-height blue lighten-5" fluid transition="slide-x-transition" app>           
               <v-row wrap>
                 <v-col cols="12" md="8" sm="12" lg="8">
                   <iframe width=100% height=100%
@@ -45,13 +44,15 @@
                     
            
           </v-container>
-          </v-content>
-          </v-app>
+     </v-content>
+  
+         
 </template>
 
   <script>
 
     export default {
+      name: 'Home',
     data: () => ({
     
     selected: 0,
